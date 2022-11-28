@@ -20,6 +20,14 @@
                 class="block mt-1 text-gray w-full"
                 @input="isRequiredDisabled"
               >
+                <input
+                v-model="localContact.image"
+                type="text"
+                placeholder="Image"
+                class="block mt-1 text-gray w-full"
+                @input="isRequiredDisabled"
+              >
+            </div>
             </div>
           </template>
 
