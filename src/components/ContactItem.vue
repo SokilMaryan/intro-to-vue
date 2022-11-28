@@ -144,7 +144,9 @@ function clickOnCancel () {
 // }
 
 function isRequiredDisabled () {
-  if (localContact.value.name.length > 0 && localContact.value.description.length > 0) {
+  if (localContact.value.name.length > 0 &&
+    localContact.value.description.length > 0 &&
+    localContact.value.image.length > 0) {
     // console.log(true)
     return true
   }
