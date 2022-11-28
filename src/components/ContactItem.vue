@@ -28,7 +28,6 @@
                 @input="isRequiredDisabled"
               >
             </div>
-            </div>
           </template>
 
           <template v-else>
