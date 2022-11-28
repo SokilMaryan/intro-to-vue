@@ -10,9 +10,15 @@
     </button>
 
     <div class="contact-list grid-cols-[repeat(auto-fill,_minmax(320px,_1fr))] grid gap-5 my-5">
-      <ContactItem
+       <ContactItem
         v-if="clickAddContact"
-        :contact="{description: '', name: '', image: '', id: 0}"
+        :contact="
+          {
+            description: '',
+            name: '',
+            image: 'https://media.istockphoto.com/id/1214428300/vector/default-profile-picture-avatar-photo-placeholder-vector-illustration.jpg?s=612x612&w=0&k=20&c=vftMdLhldDx9houN4V-g3C9k0xl6YeBcoB_Rk6Trce0=',
+            id: 0
+          }"
         @save="createContact"
         @delete="deleteContact"
         @cancel="clickOnCancel"
